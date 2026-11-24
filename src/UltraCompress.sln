@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCompress.Core", "UltraCompress.Core\UltraCompress.Core.csproj", "{0CE5E749-76D0-40F2-888A-B0C82D1C099E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCompress.Engine", "UltraCompress.Engine\UltraCompress.Engine.csproj", "{F6D0B308-7B60-46D9-8FA2-1F6D837A6115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCompress.Worker", "UltraCompress.Worker\UltraCompress.Worker.csproj", "{30526337-075D-4D08-9A4D-D47C40659C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCompress.Tray", "UltraCompress.Tray\UltraCompress.Tray.csproj", "{8F686CBF-DB14-41A6-8E0F-DA3E900AB542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraCompress.Core.Tests", "..\tests\UltraCompress.Core.Tests\UltraCompress.Core.Tests.csproj", "{067DC517-9DD0-4E7D-AFF8-B3680AA7147F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CE5E749-76D0-40F2-888A-B0C82D1C099E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE5E749-76D0-40F2-888A-B0C82D1C099E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE5E749-76D0-40F2-888A-B0C82D1C099E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE5E749-76D0-40F2-888A-B0C82D1C099E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D0B308-7B60-46D9-8FA2-1F6D837A6115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D0B308-7B60-46D9-8FA2-1F6D837A6115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D0B308-7B60-46D9-8FA2-1F6D837A6115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D0B308-7B60-46D9-8FA2-1F6D837A6115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30526337-075D-4D08-9A4D-D47C40659C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30526337-075D-4D08-9A4D-D47C40659C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30526337-075D-4D08-9A4D-D47C40659C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30526337-075D-4D08-9A4D-D47C40659C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F686CBF-DB14-41A6-8E0F-DA3E900AB542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F686CBF-DB14-41A6-8E0F-DA3E900AB542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F686CBF-DB14-41A6-8E0F-DA3E900AB542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F686CBF-DB14-41A6-8E0F-DA3E900AB542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067DC517-9DD0-4E7D-AFF8-B3680AA7147F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067DC517-9DD0-4E7D-AFF8-B3680AA7147F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067DC517-9DD0-4E7D-AFF8-B3680AA7147F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067DC517-9DD0-4E7D-AFF8-B3680AA7147F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

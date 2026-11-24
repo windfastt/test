@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>UltraCompress.Tray</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+    <!-- Phase 2: enable UseWinUI, Microsoft.WindowsAppSDK, flyout + H.NotifyIcon -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UltraCompress.Core\UltraCompress.Core.csproj" />
+  </ItemGroup>
+
+</Project>
