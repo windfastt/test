@@ -1,6 +1,6 @@
 # UltraCompress
 
-Windows-first file compressor that prioritizes **smallest defensible output** over speed. Phase 1 scaffold: Core contracts, worker CLI with **zstd**, engine service shell, and WinUI tray stub.
+Windows-first file compressor that prioritizes **smallest defensible output** over speed. Phase 1 scaffold: Core contracts, worker CLI with **zstd** and **7z (`7za` subprocess)**, engine service shell, and WinUI tray stub.
 
 ## Requirements
 
@@ -31,14 +31,14 @@ cd src/UltraCompress.Worker
 dotnet run -- compress --input /path/to/file --profile Small
 ```
 
-Profiles: `Balanced`, `Small`, `Tiny`, `Laboratory`, `Experimental` — see [docs/USER.md](docs/USER.md).
+Profiles: `Balanced`, `Small`, `Tiny`, `Laboratory`, `Experimental` — see [docs/USER.md](docs/USER.md). **Laboratory** defaults to LZMA2 **7z** via bundled `tools/7z/` (`7za`); see [tools/7z/README.md](tools/7z/README.md) and [docs/legal/THIRD_PARTY_NOTICES.md](docs/legal/THIRD_PARTY_NOTICES.md).
 
 ## Projects
 
 | Project | Role |
 |---------|------|
 | `UltraCompress.Core` | Recipes, fingerprints, backends, profiles |
-| `UltraCompress.Worker` | zstd adapter, round-trip verify, CLI |
+| `UltraCompress.Worker` | zstd + 7za adapters, round-trip verify, CLI |
 | `UltraCompress.Engine` | Windows service host stub |
 | `UltraCompress.Tray` | WinUI 3 placeholder |
 | `UltraCompress.Core.Tests` | Unit tests |
