@@ -39,9 +39,21 @@ Profiles: `Balanced`, `Small`, `Tiny`, `Laboratory`, `Experimental` — see [doc
 |---------|------|
 | `UltraCompress.Core` | Recipes, fingerprints, backends, profiles |
 | `UltraCompress.Worker` | zstd adapter, round-trip verify, CLI |
-| `UltraCompress.Engine` | Windows service host stub |
+| `UltraCompress.Engine` | Windows service host, gRPC on `localhost:17832`, job queue |
 | `UltraCompress.Tray` | WinUI 3 placeholder |
 | `UltraCompress.Core.Tests` | Unit tests |
+
+## Engine (gRPC)
+
+Runs as a console app on Linux/macOS for development, or as **Windows Service** `UltraCompress.Engine` when installed.
+
+```bash
+cd src/UltraCompress.Engine
+dotnet run
+# gRPC: localhost:17832 (HTTP/2)
+```
+
+RPC surface (`engine_v1.proto`): `Enqueue`, `GetJob`, `ListJobs`, `CancelJob`, `SetQueuePaused`, `GetQueueState`, `WatchJobs`.
 
 ## CI
 
