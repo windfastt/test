@@ -18,7 +18,7 @@
   <ItemGroup>
     <!-- 2.4.x targets net10 only; 2.3.2 is latest stable for net8.0-windows -->
     <PackageReference Include="H.NotifyIcon.WinUI" Version="2.3.2" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240923002" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250108002" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
   </ItemGroup>
 
