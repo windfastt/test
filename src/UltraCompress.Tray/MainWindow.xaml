@@ -1,0 +1,26 @@
+<Window
+    x:Class="UltraCompress.Tray.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:tb="using:H.NotifyIcon">
+
+    <Grid>
+        <tb:TaskbarIcon
+            x:Name="TrayIcon"
+            IconSource="/Assets/TrayIcon.png"
+            ToolTipText="UltraCompress — connecting…"
+            MenuActivation="RightClick"
+            LeftClickCommand="{x:Bind ShowQueueClickCommand}">
+            <tb:TaskbarIcon.ContextFlyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Open queue" Click="OnOpenQueue" />
+                    <MenuFlyoutItem Text="Pause all jobs" Click="OnPauseAll" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem Text="Reconnect to engine" Click="OnReconnect" />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem Text="Exit" Click="OnExit" />
+                </MenuFlyout>
+            </tb:TaskbarIcon.ContextFlyout>
+        </tb:TaskbarIcon>
+    </Grid>
+</Window>
